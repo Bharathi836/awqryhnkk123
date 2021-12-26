@@ -1,0 +1,33 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 5, Time elapsed: 371.719 s <<< FAILURE! - in TestSuite
+openAppn(regressionscripts.ValidLogin)  Time elapsed: 71.83 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+No connection could be made because the target machine actively refused it. (os error 10061)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-O7R52HK', ip: '192.168.0.170', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: 
+
+validlogin(regressionscripts.ValidLogin)  Time elapsed: 82.541 s  <<< FAILURE!
+org.openqa.selenium.json.JsonException: 
+java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-O7R52HK', ip: '192.168.0.170', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver
+	at regressionscripts.ValidLogin.validlogin(ValidLogin.java:27)
+Caused by: java.lang.reflect.InvocationTargetException
+	at regressionscripts.ValidLogin.validlogin(ValidLogin.java:27)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//span[.='Men']"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-O7R52HK', ip: '192.168.0.170', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49970}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f946c84f9cbed4475d37425f0022b0f9
+*** Element info: {Using=xpath, value=//span[.='Men']}
+	at regressionscripts.ValidLogin.validlogin(ValidLogin.java:27)
+
