@@ -23,6 +23,7 @@ public class ValidLogin extends Generic_Test
 				lp.clicklogin();
 			    lp.title(driver);
 				Thread.sleep(3000);
+				System.out.println("test");
                 lp.fashion(driver);
                 lp.hover(driver);
                 lp.Tshirt(driver);
